@@ -80,6 +80,7 @@ main {
 footer {
   background-color: #5c3d2e;
   grid-area: footer;
+  background-image: linear-gradient(to right, grey, black);
 }
 
 .spotifyLogo {
