@@ -71,7 +71,7 @@
 }
 
 main {
-  background-image: url(/Multimedia/BgImageGallery.jpg);
+  background-image: url(../Multimedia/BgImageGallery.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
