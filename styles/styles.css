@@ -3,194 +3,77 @@
   font-family: "Roboto Slab", serif;
 }
 
-body {
-  grid-template-columns: repeat(2 1fr);
-  grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer";
-}
-.logo {
-  height: 50px;
-  width: 50px;
+.navBar {
   display: flex;
-  align-self: flex-end;
+  margin-left: 150px;
+}
+.fbLogo {
+  width: 30px;
+  height: auto;
+}
+.twLogo {
+  width: 30px;
+  height: auto;
 }
 
-.imgBanda {
-  width: 60%;
-  display: flex;
-  align-self: center;
+.igLogo {
+  width: 30px;
+  height: auto;
 }
-
+.spotifyLogo {
+  width: 30px;
+  height: auto;
+}
+.logoBanda img {
+  width: 30px;
+  height: 30px;
+}
 .tituloIndex {
+  margin-top: 35px;
   text-align: center;
-  color: #4d4c7d;
 }
 .parrafoIndex {
   text-align: center;
-  color: #4d4c7d;
 }
 
-header {
-  background-image: linear-gradient(to left, grey, black);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  grid-area: header;
-}
-header ul {
-  display: flex;
-}
-header li {
-  list-style: none;
-  text-decoration: none;
-  padding: 0 20px;
-}
-header li a {
-  text-decoration: none;
-  color: #4d4c7d;
-}
-
-main {
-  grid-area: main;
-  background-image: linear-gradient(to top, black,grey);
-  width: 100%;
+.carousel.slide {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2 1fr);
-  grid-template-areas:
-    "item1 item2"
-    "item1 item2";
+  width: 60%;
+  height: auto;
 }
 
-.item1 {
-  grid-area: item1;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-}
-.item2 {
-  grid-area: item2;
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-}
-
-footer {
-  background-color: #5c3d2e;
-  grid-area: footer;
-  background-image: linear-gradient(to right, grey, black);
-}
-
-.spotifyLogo {
-  width: 32px;
-}
-ul a:hover {
-  background-color: antiquewhite;
-  padding: 5px 0;
-}
-
-.containerMulti {
-  display: grid;
+.carosuel-item {
   width: 100%;
-  grid-template-columns: repeat(2 1fr);
-  grid-template-rows: 0.2fr 0.5fr 0.2fr 0.5fr;
-  grid-template-areas:
-    "h2 h2"
-    "fotosMulti fotosMulti"
-    "h3 h3"
-    "videitos videitos";
-}
-
-.fotosMulti img {
-  margin: 1%;
-  width: 40%;
-}
-.fotosMulti {
-  grid-area: fotosMulti;
-  display: flex;
-  justify-content: center;
-}
-
-.tituloMulti1 {
-  grid-area: h2;
-  text-align: center;
-  margin-top: 10px;
-}
-.fotitosGrid2 {
-  display: flex;
-  justify-content: flex-end;
-}
-.fotitosGrid3 {
-  display: flex;
-}
-
-.tituloMulti2 {
-  grid-area: h3;
-  display: flex;
-  justify-content: center;
-  padding: 3%;
-}
-.videitos {
-  grid-area: videitos;
-  display: flex;
-  justify-content: center;
-  padding: 3%;
-}
-
-@media (max-width: 425px) {
-  body {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-  }
-  ul {
-    flex-direction: column;
-  }
-
-  li {
-    margin: 10px 0px;
-  }
-
-  header {
-    flex-direction: column-reverse;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  .imgBanda {
-    align-self: center;
-    margin-top: 10px;
-  }
-  .containerMulti {
-    grid-template-columns: repeat(1 1fr);
-    grid-template-areas:
-      "h2"
-      "fotosMulti"
-      "h3"
-      "videitos";
-  }
-  .videitos {
-    padding: 3%;
-    width: 50px;
-    justify-self: center;
-  }
-  .fotosMulti{
-    flex-direction: column;
-  }
-  .fotitosGrid2{
-    justify-content: center;
-  }
-  .fotitosGrid3{
-    justify-content: center;
-  }
 }
 
 @media (max-width: 768px) {
-  /**Null**/
+  .imgBanda {
+    margin: auto;
+   
+  }
+  .carousel.slide {
+    width: 80%;
+  }
+}
+
+.tituloFotitos {
+  text-align: center;
+  
+  margin-bottom: 30px;
+  color: black;
+}
+
+.tituloVideitos {
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+main {
+  background-image: url(/Multimedia/BgImageGallery.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }

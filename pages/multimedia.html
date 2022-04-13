@@ -10,59 +10,125 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
-    <title>Banda x</title>
+    <title>Architects</title>
   </head>
   <body>
-    <header>
-      <nav class="menu">
-        <ul class="ul">
-          <li><a href="about.html">About</a></li>
-          <li><a href="albums.html">Albums</a></li>
-          <li><a href="multimedia.html">Multimedia</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <header class="bg-dark p-2 text-dark bg-opacity-75">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark w-md-85 w-lg-80 w-xl-80 w-xl-85 w-xxl-80 mb-lg-4 ms-xxl-8"
+      >
+        <div
+          class="container-fluid flex-lg-row-reverse justify-content-between"
+        >
+          <button
+            class="navbar-toggler custom-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand logoBanda" href="/index.html"
+            ><img src="/Multimedia/Logo.jpg" alt="Logo"
+          /></a>
+          <div
+            class="collapse navbar-collapse text-uppercase"
+            id="navbarTogglerDemo03"
+          >
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="albums.html"
+                  >Albums</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="multimedia.html"
+                  >Multimedia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contacto.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <a href="../index.html" !important>
-        <img src="../Multimedia/Logo.jpg" class="logo" alt="Logo" />
-      </a>
     </header>
-    <main class="containerMulti">
-      <h2 class="tituloMulti1">Fotos</h2>
-
-      <div class="fotosMulti">
-        <div class="fotitosGrid2">
-          <img src="../Multimedia/Fotos_Multi.jpg" /><img
-            src="../Multimedia/Fotos_Multi2.jpg"
-          />
+    <main class="bg-img container-fluid "> 
+     
+      <h2 class="tituloFotitos ">Fotos</h2>
+      <div id="carouselExampleIndicators" class="carousel slide  d-flex col-8 justify-content-center" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
-        <div class="fotitosGrid3">
-          <img src="../Multimedia/fotos_multi3.jpg" /><img
-            src="../Multimedia/Fotos_Multi4.jpg"
-          />
+        <div class="carousel-inner carouselFotitos">
+          <div class="carousel-item active">
+            <img src="../Multimedia/Fotos_Multi.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Multimedia/Fotos_Multi2.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="../Multimedia/fotos_multi3.jpg" class="d-block w-100" >
+          </div>
+        <div class="carousel-item">
+            <img src="../Multimedia/fotos_multi4.jpg" class="d-block w-100" >
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
-      <h3 class="tituloMulti2">Videos</h3>
+      <h3 class="tituloVideitos h2">Videos</h3>
 
-      <div class="videitos">
+      <div class="videitos d-flex justify-content-center align-items-center flex-column flex-xl-column w-100">
         <iframe
-          width="560"
-          height="315"
+          width="60%"
+          height="350px"
           src="https://www.youtube.com/embed/OCJi5hVdiZU"
+          class="videos-container my-2 mx-xxl-5"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+        <iframe 
+         width="60%" height="350px" 
+         src="https://www.youtube.com/embed/RvWbcK3YQ_o"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="footer bg-dark text-white bg-opacity-75 container-fluid ">
       <a
         href="https://open.spotify.com/artist/3ZztVuWxHzNpl0THurTFCv?si=1EOWzlDSQRaaYvXM6AVVeA"
-        ><img src="../Multimedia/Spotify_logo.png" class="spotifyLogo"
+        ><img src="/Multimedia/Spotify_logo.png" class="spotifyLogo  col-3"
       /></a>
-      (Agregar luego fb,yt,ig)
+      <a href="https://www.facebook.com/architectsuk"> <img src="/Multimedia/fbLogo.png" class=" fbLogo col-3"></a>
+      <a href="https://www.instagram.com/architects"><img src="/Multimedia/igLogo.png" class=" igLogo col-3"></a>
+      <a href="https://twitter.com/architectsuk"><img src="/Multimedia/twLogo.png" class="twLogo col-3"></a>
     </footer>
+    <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>
