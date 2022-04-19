@@ -7,38 +7,87 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../styles/styles.css">
-    <title>Banda x</title>
+    <title>Architects</title>
 </head>
 <body>
 
- <header>   
-    <nav class="menu">
-        
-        <ul class="ul">
-            <li><a href="about.html">About</a></li>
-            <li><a href="albums.html">Albums</a></li>       
-            <li><a href="multimedia.html">Multimedia</a></li>    
-            <li><a href="contacto.html">Contacto</a></li>
-            
-        </ul>
-    </nav>
-         <a href="../index.html" !important >
-            <img src="../Multimedia/Logo.jpg"  class="logo"  alt="Logo">
-            </a>
- </header>          
+    <header class="bg-dark p-2 text-dark bg-opacity-75">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark w-md-85 w-lg-80 w-xl-80 w-xl-85 w-xxl-80 mb-lg-4 ms-xxl-8"
+        >
+          <div
+            class="container-fluid flex-lg-row-reverse justify-content-between"
+          >
+            <button
+              class="navbar-toggler custom-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand logoBanda" href="../index.html"
+              ><img src="../Multimedia/Logo.jpg" alt="Logo"
+            /></a>
+            <div
+              class="collapse navbar-collapse text-uppercase"
+              id="navbarTogglerDemo03"
+            >
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="about.html"
+                    >About us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="albums.html"
+                    >Albums</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="multimedia.html"
+                    >Multimedia</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="contacto.html"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>          
 
-        <div class="titlesMultimedia">
-            <h2>Discografia</h2>
-            <h3>No te pierdas sus ultimos exitos!</h4>
-            <h4>Escuchalos aqui!</h4>
-            <h6 class="iFrames"><iframe src="https://open.spotify.com/embed/album/7qemUq4n71awwVPOaX7jw4?theme=0" width="50%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe><iframe src="https://open.spotify.com/embed/track/5ofoB8PFmocBXFBEWVb6Vz" width="50%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe><iframe src="https://open.spotify.com/embed/album/3gh9LlHXtUEPkqsWj60Qy7?theme=0" width="50%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe><iframe src="https://open.spotify.com/embed/track/75R95k0ICuZBFVEjBauOtt" width="50%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></h6>
-        </div>
+          <div class="bgAlbums container-fluid">
+            <div class="titlesMulti" ><h2 class="h1"> Discografia</h2>
+            <h3 class="h1">No te pierdas sus ultimos exitos!</h4>
+            <h4 class="h1">Escuchalos aqui!</h4></div>
+
+            <div class="d-flex flex-column w-c-100 flex-lg-row justify-content-center iFramesAlbums">
+            <iframe src="https://open.spotify.com/embed/track/5ofoB8PFmocBXFBEWVb6Vz" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media" class="iFrame1"></iframe><iframe src="https://open.spotify.com/embed/album/7qemUq4n71awwVPOaX7jw4?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media" class="iFrame1"></iframe><iframe src="https://open.spotify.com/embed/track/75R95k0ICuZBFVEjBauOtt" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media" class="iFrame1"></iframe>
+            </div>
+            </div>
     
 
 
 
 
-    <footer>Pie de pagina</footer>
+        <footer class="footer bg-dark text-white bg-opacity-75 container-fluid ">
+            <a
+              href="https://open.spotify.com/artist/3ZztVuWxHzNpl0THurTFCv?si=1EOWzlDSQRaaYvXM6AVVeA"
+              ><img src="../Multimedia/Spotify_logo.png" class="spotifyLogo  col-3"
+            /></a>
+            <a href="https://www.facebook.com/architectsuk"> <img src="../Multimedia/fbLogo.png" class=" fbLogo col-3"></a>
+            <a href="https://www.instagram.com/architects"><img src="../Multimedia/igLogo.png" class=" igLogo col-3"></a>
+            <a href="https://twitter.com/architectsuk"><img src="../Multimedia/twLogo.png" class="twLogo col-3"></a>
+          </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
