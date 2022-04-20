@@ -1,8 +1,155 @@
-h1{
-    color: red;
+* {
+  margin: 0%;
+  font-family: "Roboto Slab", serif;
 }
 
+.navBar {
+  display: flex;
+  margin-left: 150px;
+}
+.fbLogo {
+  width: 30px;
+  height: auto;
+}
+.twLogo {
+  width: 30px;
+  height: auto;
+}
 
-.header {
-    background-color: aliceblue;
+.igLogo {
+  width: 30px;
+  height: auto;
+}
+.spotifyLogo {
+  width: 30px;
+  height: auto;
+}
+.logoBanda img {
+  width: 30px;
+  height: 30px;
+}
+.tituloIndex {
+  margin-top: 35px;
+  text-align: center;
+}
+.parrafoIndex {
+  text-align: center;
+}
+
+.carousel.slide {
+  margin: 0 auto;
+  width: 60%;
+  height: auto;
+}
+
+.carosuel-item {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .imgBanda {
+    margin: auto;
+  }
+  .carousel.slide {
+    width: 80%;
+  }
+}
+
+.tituloFotitos {
+  text-align: center;
+
+  margin-bottom: 30px;
+  color: black;
+}
+
+.tituloVideitos {
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+main {
+  background-image: url(../Multimedia/BgImageGallery.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bgAbout {
+  background-image: url(../Multimedia/BgImageGallery.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bgAlbums {
+  background-image: url(../Multimedia/BgImageGallery.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  padding: 15px;
+}
+.bgContact {
+  background-image: url(../Multimedia/BgImageGallery.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  flex-direction: column;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.titlesMulti {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.iFramesAlbums {
+  gap: 1%;
+}
+
+@media (max-width: 992px) {
+  .iFrame1 {
+    margin: 1%;
+  }
+}
+
+.tituloAbout {
+  text-align: center;
+  color: black;
+  font-weight: 500;
+}
+
+.pAbout {
+  color: black;
+  font-weight: 500;
+}
+.formFlex {
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  margin-top: 130px;
+}
+
+.tituloContact {
+  color: gray;
+  margin-top: 3%;
+}
+
+.imgContact {
+  align-self: center;
+  margin: 5%;
 }
