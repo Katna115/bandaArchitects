@@ -1,3 +1,7 @@
+@import "variables";
+
+
+
 * {
   margin: 0%;
   font-family: "Roboto Slab", serif;
@@ -12,17 +16,15 @@
   height: auto;
 }
 .twLogo {
-  width: 30px;
-  height: auto;
+  @extend .fbLogo;
+  
 }
 
 .igLogo {
-  width: 30px;
-  height: auto;
+  @extend .fbLogo;
 }
 .spotifyLogo {
-  width: 30px;
-  height: auto;
+  @extend .fbLogo;
 }
 .logoBanda img {
   width: 30px;
@@ -31,6 +33,7 @@
 .tituloIndex {
   margin-top: 35px;
   text-align: center;
+  color: map-get($color, violetitaDe9Z);
 }
 .parrafoIndex {
   text-align: center;
@@ -69,39 +72,30 @@
   margin-bottom: 30px;
 }
 
-main {
+@mixin bgDeLaPage{
   background-image: url(../Multimedia/BgImageGallery.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
 }
+main {
+  @include bgDeLaPage;
+}
 
 .bgAbout {
-  background-image: url(../Multimedia/BgImageGallery.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
+  @include bgDeLaPage;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .bgAlbums {
-  background-image: url(../Multimedia/BgImageGallery.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
+  @include bgDeLaPage;
   padding: 15px;
 }
 .bgContact {
-  background-image: url(../Multimedia/BgImageGallery.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
+  @include bgDeLaPage;
   flex-direction: column;
 }
 
@@ -153,3 +147,4 @@ main {
   align-self: center;
   margin: 5%;
 }
+

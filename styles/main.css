@@ -6,19 +6,7 @@
   display: flex;
   margin-left: 150px; }
 
-.fbLogo {
-  width: 30px;
-  height: auto; }
-
-.twLogo {
-  width: 30px;
-  height: auto; }
-
-.igLogo {
-  width: 30px;
-  height: auto; }
-
-.spotifyLogo {
+.fbLogo, .twLogo, .igLogo, .spotifyLogo {
   width: 30px;
   height: auto; }
 
@@ -28,7 +16,8 @@
 
 .tituloIndex {
   margin-top: 35px;
-  text-align: center; }
+  text-align: center;
+  color: #9900F0; }
 
 .parrafoIndex {
   text-align: center; }
