@@ -1,7 +1,5 @@
 @import "variables";
 
-
-
 * {
   margin: 0%;
   font-family: "Roboto Slab", serif;
@@ -11,13 +9,13 @@
   display: flex;
   margin-left: 150px;
 }
+
 .fbLogo {
   width: 30px;
   height: auto;
 }
 .twLogo {
   @extend .fbLogo;
-  
 }
 
 .igLogo {
@@ -27,13 +25,12 @@
   @extend .fbLogo;
 }
 .logoBanda img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
 }
 .tituloIndex {
   margin-top: 35px;
   text-align: center;
-  color: map-get($color, violetitaDe9Z);
 }
 .parrafoIndex {
   text-align: center;
@@ -43,6 +40,9 @@
   margin: 0 auto;
   width: 60%;
   height: auto;
+  img {
+    height: auto;
+  }
 }
 
 .carosuel-item {
@@ -55,6 +55,21 @@
   }
   .carousel.slide {
     width: 80%;
+    height: auto;
+  }
+  .videitos iframe {
+    width: 80%;
+    height: 350px;
+  }
+}
+
+@media (max-width: 468px) {
+  .carousel.slide {
+    width: 80%;
+    height: 150px;
+    img {
+      height: 150px;
+    }
   }
 }
 
@@ -62,17 +77,20 @@
   text-align: center;
 
   margin-bottom: 30px;
-  color: black;
+  color: #dddddd;
 }
 
 .tituloVideitos {
-  color: black;
+  color: #dddddd;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
 }
+.videitos {
+  padding-bottom: 30px;
+}
 
-@mixin bgDeLaPage{
+@mixin bgDeLaPage {
   background-image: url(../Multimedia/BgImageGallery.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -108,7 +126,7 @@ main {
   justify-self: center;
   flex-direction: column;
   text-align: center;
-  color: white;
+  color: #dddddd;
 }
 
 .iFramesAlbums {
@@ -123,12 +141,12 @@ main {
 
 .tituloAbout {
   text-align: center;
-  color: black;
+  color: #dddddd;
   font-weight: 500;
 }
 
 .pAbout {
-  color: black;
+  color: #dddddd;
   font-weight: 500;
 }
 .formFlex {
@@ -148,3 +166,16 @@ main {
   margin: 5%;
 }
 
+.imgBanda {
+  margin: 0 auto;
+}
+
+.textoEnXl {
+  .textIndex {
+    margin: 0 auto;
+  }
+}
+
+.nav-link {
+  &:hover {color: black;}
+}
