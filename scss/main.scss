@@ -4,7 +4,14 @@
   margin: 0%;
   font-family: "Roboto Slab", serif;
 }
-
+html {
+  position: relative;
+  min-height: 100%;
+}
+main{
+  padding-bottom: 3%;
+  
+}
 .navBar {
   display: flex;
   margin-left: 150px;
@@ -31,9 +38,12 @@
 .tituloIndex {
   margin-top: 35px;
   text-align: center;
+  color: whitesmoke;
 }
 .parrafoIndex {
   text-align: center;
+  color: whitesmoke;
+  padding-bottom: 5%;
 }
 
 .carousel.slide {
@@ -69,6 +79,9 @@
     height: 150px;
     img {
       height: 150px;
+    }
+    .mainContact {
+      padding-bottom: 0%;
     }
   }
 }
@@ -115,6 +128,7 @@ main {
 .bgContact {
   @include bgDeLaPage;
   flex-direction: column;
+  
 }
 
 .btn {
@@ -129,41 +143,49 @@ main {
   color: #dddddd;
 }
 
-.iFramesAlbums {
-  gap: 1%;
+.iFramesAlbums1 {
+  gap: 0%;
 }
 
-@media (max-width: 992px) {
+.iFramesAlbums2 {
+  gap: 0%;
+}
+
+
+
+@media (max-width: 1200px) {
   .iFrame1 {
-    margin: 1%;
+    padding: 1% 0;
   }
 }
 
 .tituloAbout {
   text-align: center;
-  color: #dddddd;
+  color: whitesmoke;
   font-weight: 500;
 }
 
 .pAbout {
-  color: #dddddd;
+  color: whitesmoke;
   font-weight: 500;
 }
+
+
 .formFlex {
   flex-direction: column;
   justify-self: center;
   align-items: center;
-  margin-top: 130px;
+  margin-top: 8%;
 }
 
 .tituloContact {
-  color: gray;
+  color: whitesmoke;
   margin-top: 3%;
 }
 
 .imgContact {
   align-self: center;
-  margin: 5%;
+  padding: 2% 0;
 }
 
 .imgBanda {
@@ -176,6 +198,24 @@ main {
   }
 }
 
-.nav-link {
-  &:hover {color: black;}
+.navbar-nav {
+  a {
+    color: whitesmoke;
+    &:hover {
+      color: black;
+    }
+  }
+
+}
+
+.footerPag {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.mainContact {
+  h1{
+    color: whitesmoke;
+  }
 }
